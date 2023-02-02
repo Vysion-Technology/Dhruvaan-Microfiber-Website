@@ -1,0 +1,194 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: var(--dark);
+  /* background-color: red; */
+}
+.home {
+  height: 100vh;
+  width: 100%;
+}
+.homeContainerCustomCss {
+  height: 100%;
+  display: flex;
+  padding: var(--sectionPadding);
+  justify-content: space-between;
+}
+.box {
+  height: 100%;
+  /* border: 1px solid red; */
+}
+#one {
+  width: 100%;
+  padding-top: 5vw;
+  height: 50%;
+}
+#two {
+  width: 30%;
+  z-index: 10;
+  height: 100%;
+  overflow: hidden;
+}
+#three {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#two img {
+  width: 20vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -30%);
+}
+
+.leftOne {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.vysionContent {
+  transform: translateY(-4em);
+}
+
+.desc {
+  color: white;
+  font-size: var(--paraFontPC);
+  font-weight: var(--lightweight);
+  line-height: var(--paraLineHeight);
+  letter-spacing: 0.09em;
+  z-index: 10;
+}
+
+#graphic_left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-20vw);
+  width: 55vw;
+  height: 37vh;
+  background: var(--light);
+  border-radius: 0 80px 0 0;
+  z-index: -10;
+}
+
+#graphic_right {
+  width: 55vw;
+  height: 37vh;
+  background: var(--light);
+  z-index: -10;
+  border-radius: 0px 0px 0px 80px;
+  position: absolute;
+  transform: translateX(20vw);
+  top: 0;
+  right: 0;
+}
+
+.buttonwr {
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.Big_Dhruvaan_name {
+  color: white;
+  font-size: 6.8vw;
+  font-weight: var(--bold);
+  line-height: var(--bigHeadingLineHeight);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.vysionProduct {
+  color: white;
+  font-size: 3vw;
+  font-weight: var(--bold);
+  line-height: var(--bigHeadingLineHeight);
+  letter-spacing: 0.05em;
+  text-align: right;
+  text-transform: uppercase;
+}
+.A_productby {
+  color: white;
+  font-size: 2vw;
+  /* font-weight: var(--bold); */
+  line-height: var(--bigHeadingLineHeight);
+  letter-spacing: 0.05em;
+  text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+  .Big_Dhruvaan_name {
+    font-size: 10vw;
+  }
+  .A_productby {
+    font-size: 6vw;
+  }
+  .vysionProduct {
+    font-size: 7vw;
+  }
+  .breakPoint {
+    display: none;
+  }
+  .home {
+    height: fit-content;
+    padding: 5vw 0px;
+  }
+  .homeContainerCustomCss {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .box {
+    width: 100%;
+  }
+  .leftOne {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #one,
+  #two,
+  #three {
+    width: 100%;
+    padding: 0vw;
+  }
+  #one {
+    padding-top: 80px;
+  }
+  #two {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  #two img {
+    width: 70%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    padding-top: 70px;
+    transform: translate(0em, 0em) rotate(-4deg);
+  }
+  #three {
+    height: 50vh;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+
+  .vysionContent {
+    transform: translateY(0);
+  }
+
+  #graphic_right,
+  #graphic_left {
+    display: none;
+  }
+}

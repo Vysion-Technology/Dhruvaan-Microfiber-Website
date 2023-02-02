@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap");
+.Modal_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: #00000080;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 10000;
+}
+.Modal_Base {
+  width: 50vw;
+  max-width: 600px;
+  min-width: 340px;
+  height: fit-content;
+
+  background: #35373d;
+  background: linear-gradient(283.29deg, #62b47f -7.51%, #236f3b 102.25%);
+
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+
+  position: relative;
+
+  transform: translateY(-50px);
+}
+.demo_heading {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 36px;
+}
+.demo_para {
+  color: white;
+  font-size: 18px;
+  line-height: 23px;
+}
+.button_wrapper {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.demo_button {
+  width: 150px;
+  height: 46px;
+  background: #097e2e;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.demo_button:hover {
+  background: #0a7e2f;
+  border: none;
+}
+.Demo_close_Button {
+  color: white;
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Demo_close_Button:hover {
+  background-color: #0a7e2f;
+}
+@media screen and (max-width: 500px) {
+  .Demo_close_Button {
+    right: 10px;
+    top: 10px;
+  }
+}

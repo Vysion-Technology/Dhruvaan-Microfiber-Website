@@ -1,0 +1,83 @@
+.chartsWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  padding: var(--sectionPadding);
+}
+.leftSection {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 1em;
+}
+
+.toggleWrapper {
+  height: 50px;
+  width: 100%;
+  /* background-color: black; */
+  user-select: none;
+}
+.toggleBase {
+  height: 100%;
+  width: 80%;
+  background-color: var(--light);
+  /* border-radius: 10px; */
+  position: relative;
+  display: flex;
+  /* transition: 1s; */
+  cursor: pointer;
+}
+.toggleSlider {
+  width: 50%;
+  height: 50px;
+  background-color: var(--darkgreen);
+  /* border-radius: 10px; */
+  transition: 0.2s;
+
+  position: absolute;
+  top: 0;
+  /* transform: translateX(100%); */
+}
+
+.paras {
+  width: 50%;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.paras p {
+  margin: 0;
+  z-index: 10;
+}
+
+.rightSection {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightSection video {
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .chartsWrapper{
+    flex-direction: column-reverse;
+  }
+  .leftSection, .rightSection{
+    width: 100%;
+  }
+  .toggleBase{
+    width: 100%;
+  }
+}

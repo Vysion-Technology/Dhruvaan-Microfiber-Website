@@ -1,0 +1,173 @@
+.features {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* background-color: var(--dark); */
+  /* background-color: #e08383; */
+  color: white;
+}
+
+.device_structure {
+  width: 55vw;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  overflow: hidden;
+  position: relative;
+  z-index: 60;
+  background-color: var(--dark);
+}
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  background-color: #095220;
+  overflow: hidden;
+}
+.videos {
+  width: 100%;
+  transform: scale(1.5);
+  position: absolute;
+}
+.partsDescription {
+  width: 45vw;
+  padding: 10vw 7vw 10vw 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  background-color: var(--dark);
+}
+.device_structure,
+.partsDescription {
+  height: 100%;
+}
+.description_wrapper {
+  padding: 0;
+  width: 100%;
+}
+.description_wrapper h2{
+  margin-bottom: 0.5em;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #095220; */
+  margin-top: 2vw;
+}
+
+.forward_button {
+  width: 48%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkgreen);
+  cursor: pointer;
+}
+
+.backward_button {
+  width: 48%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+  cursor: pointer;
+}
+
+.forward_button:hover {
+  background: #0b6126;
+}
+.backward_button:hover {
+  background: #ffffff16;
+}
+
+.forward_button i {
+  transform: rotate(-90deg);
+}
+.backward_button i {
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 992px) {
+  .features {
+    height: 100vh;
+    padding-top: 70px;
+    flex-direction: column;
+    /* height: fit-content; */
+  }
+  .device_structure,
+  .partsDescription {
+    width: 100vw;
+    height: 50%;
+  }
+
+  .device_structure {
+    height: fit-content;
+    z-index: 60;
+  }
+
+  .videoContainer {
+    height: 40vh;
+    align-items: flex-start;
+  }
+
+  .videos {
+    width: 65vh;
+    transform: scale(1.2);
+  }
+
+  .partsDescription {
+    padding: 0px 7vw;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+  }
+
+  .description_wrapper {
+    padding: 7vw 0vw;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #forward {
+    transform: rotate(-90deg);
+  }
+  #backward {
+    transform: rotate(-90deg);
+  }
+
+  .buttonWrapper {
+    padding: 0px 0vw 40px;
+  }
+  .forward_button {
+    width: 50%;
+    background-color: #0c9136;
+  }
+  .forward_button:hover {
+    /* background: #ffffff16; */
+    background-color: #0c9136;
+  }
+  .backward_button:hover {
+    background: var(--light);
+  }
+  .forward_button:active {
+    background-color: #0b6126;
+  }
+  .backward_button:active {
+    background-color: var(--dark);
+  }
+}
